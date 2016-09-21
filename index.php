@@ -7,6 +7,7 @@
  */
 
 echo '<div style="center">
+<h2>hello</h2>
             <embed src="Resume.6.6.2016.pdf" width="800px" height="2100px" />
         </div>
            ';
