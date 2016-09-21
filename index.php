@@ -5,7 +5,7 @@
  * Date: 9/20/2016
  * Time: 11:19 PM
  */
-require "header.html";
+require_once("header.html");
 
 echo '<div style="text-align:center">
 <h2>Hello and welcome to my website.</h2>
@@ -17,6 +17,6 @@ echo '<div style="text-align:center">
         
            ';
 
-require "footer.html";
+require_once("footer.html");
 ?>
 
