@@ -12,6 +12,9 @@ echo '<div style="text-align:center">
  <p>It is currently being developed on as you read this. Thank you for your time and patience as I continue to improve this site.</p>
             <embed src="Resume.6.6.2016.pdf" width="800px" height="2100px" />
         </div>
+        
+        
+        
            ';
 
 require "footer.html";
