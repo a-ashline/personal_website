@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="260bce60-a783-45e0-91d5-a7c382d1a47e" name="MyServer" url="http://andrewashline.com">
+        <fileTransfer host="andrewashline.com" port="21" password="dff9dfc2dfcbdfc1dfcfdfd8df98dff9dfc3dfcfdfc4dfcbdf84" username="AEA@andrewashline.com">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
