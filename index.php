@@ -5,6 +5,7 @@
  * Date: 9/20/2016
  * Time: 11:19 PM
  */
+require "header.html";
 
 echo '<div style="text-align:center">
 <h2>Hello and welcome to my website.</h2>
@@ -13,6 +14,6 @@ echo '<div style="text-align:center">
         </div>
            ';
 
-
+require "footer.html";
 ?>
 
