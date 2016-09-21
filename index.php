@@ -7,15 +7,15 @@
  */
 require_once("header.php");
 
-echo '<div style="text-align:center">
-<h2>Hello and welcome to my website.</h2>
- <p>It is currently being developed on as you read this. Thank you for your time and patience as I continue to improve this site.</p>
-            <embed src="Resume.6.6.2016.pdf" width="800px" height="2100px" />
-        </div>
-        
-        
-        
-           ';
+//echo '<div style="text-align:center">
+//<h2>Hello and welcome to my website.</h2>
+// <p>It is currently being developed on as you read this. Thank you for your time and patience as I continue to improve this site.</p>
+//            <embed src="Resume.6.6.2016.pdf" width="800px" height="2100px" />
+//        </div>
+//
+//
+//
+//           ';
 
 require_once("footer.php");
 ?>
