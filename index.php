@@ -7,15 +7,17 @@
  */
 require_once("header.php");
 
-echo '<div style="text-align:center">
-<h2>Hello and welcome to my website.</h2>
- <p>It is currently being developed on as you read this. Thank you for your time and patience as I continue to improve this site.</p>
-            <embed src="Resume.6.6.2016.pdf" width="800px" height="2100px" />
-        </div>
-
-
-
-           ';
+echo '<div class="row">
+    <div class="small-12 columns" >
+        <h2>Welcome</h2>
+         <p>My name is Andrew Ashline and I'."'".'m a 2016 graduate of Siena College. There I earned a bachelor'."'".'s degree in computer science.</p>
+         
+         <p style="text-align:center">Thank you for your time and patience as I continue to improve this site.</p>
+                </div>
+        
+        
+        
+                   ';
 
 require_once("footer.php");
 ?>
