@@ -8,7 +8,7 @@ echo '<!DOCTYPE=HTML>
     
     <link rel="stylesheet" type="text/css" href="foundation/css/foundation.min.css">
 
-    <style>html, body { background-color: #D3D3D3}</style>
+    <style>html, body { background-color: #E5E4E2}</style>
     <script src="foundation/js/vendor/jquery.js"></script>
     <script src="foundation/js/foundation/foundation.js"></script>
     <script src="foundation/js/foundation/foundation.alert.js"></script>

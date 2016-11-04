@@ -17,7 +17,7 @@ echo '
                         <h2>Horse'."'".'s</h2>
                         <fieldset><h3>Mare</h3></fieldset>
                         <fieldset><h3>Yearling</h3></fieldset>
-                        <fieldset><h3>Stallion</h3></fieldset>                    
+                        <fieldset><h3>Fold</h3></fieldset>                    
                     </fieldset>
               </div>
               <div class="column small-4">

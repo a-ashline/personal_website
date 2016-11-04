@@ -10,12 +10,12 @@ echo'
 
     <style>
         html, body {
-            font-size: 15px;
-            background-color: #f7f7f7;
+            font-size: 13px;
+            background-color: #E5E4E2;
         }
         
-        .top-bar {
-            height: 4rem;
+       .top-bar {
+            height: 3.15rem;
             
         }
         
@@ -29,6 +29,7 @@ echo'
     <script src="../foundation/js/vendor/jquery.js"></script>
     <script src="../foundation/js/foundation/foundation.js"></script>
     <script src="../foundation/js/foundation/foundation.alert.js"></script>
+    <script src="js/functions.js"></script>
 </head>
 <div class="body">
     <div class="sticky"></div>
@@ -39,9 +40,9 @@ echo'
             </ul>
             <ul class="right">
                 <li><a style="font-size: 16px; background-color: #003617" href="#">About</a></li>
-                <li><a style="font-size: 16px; background-color: #003617" href="#">Mares</a></li>
-                <li><a style="font-size: 16px; background-color: #003617" href="#">Yearlings</a></li>
-                <li><a style="font-size: 16px; background-color: #003617" href="#">Stallions</a></li>
+                <li><a id="mare" style="font-size: 16px; background-color: #003617" href="#">Mares</a></li>
+                <li><a id="year" style="font-size: 16px; background-color: #003617" href="yearling.php">Yearlings</a></li>
+                <li><a id="fold" style="font-size: 16px; background-color: #003617" href="fold.php">Folds</a></li>
                 <li><a style="font-size: 16px; background-color: #003617" href="#">Contact</a></li>
             </ul>
         </section>
