@@ -5,6 +5,10 @@
  * Date: 9/26/2016
  * Time: 3:34 PM
  */
+session_start();
+$_SESSION['mare']=false;
+$_SESSION['year']=false;
+$_SESSION['fold']=false;
 require_once('header.php');
 
 echo '
