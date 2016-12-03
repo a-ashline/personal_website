@@ -7,9 +7,12 @@
  */
 session_start();
 
+$_SESSION['about']=false;
 $_SESSION['mare']=false;
 $_SESSION['year']=true;
 $_SESSION['fold']=false;
+$_SESSION['contact']=false;
+
 require_once('header.php');
 
 

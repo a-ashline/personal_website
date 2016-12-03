@@ -6,17 +6,30 @@
  * Time: 3:34 PM
  */
 session_start();
+
+$_SESSION['about']=false;
 $_SESSION['mare']=false;
 $_SESSION['year']=false;
 $_SESSION['fold']=false;
+$_SESSION['contact']=false;
+
 require_once('header.php');
 
 echo '
           <div>
             <img src="pasture.jpg" width="100%" >
           </div>
-          <div class="row align-justify">
-              <div class="column small-4">
+          <div class="container">
+          <div class="row fullWidth">
+          <div class="column">
+                    <fieldset style="background-color: #ccac5f">
+                        <h2>Featured</h3>
+                        <div style="background-color:white">
+                            <img src="OldTShort.PNG">
+                        </div>
+                    </fieldset>
+              </div>
+              <div class="column small-6">
                     <fieldset style="background-color: #ccac5f">
                         <h2>Horse'."'".'s</h2>
                         <fieldset><h3>Mare</h3></fieldset>
@@ -24,26 +37,8 @@ echo '
                         <fieldset><h3>Fold</h3></fieldset>                    
                     </fieldset>
               </div>
-              <div class="column small-4">
-                    <fieldset style="background-color: #ccac5f">
-                        <h2>Featured</h3>
-                        <div style="background-color:white">
-                            <p>Roman Ceres</p>
-
-                            <p>Foaled on February 17, 2013</p>
-                            <p>New York</p>
-                            
-                            <p>Career Stats</p>
-                            <p>Starts	1st	2nd	3rd	Earnings</p>
-                            <p>7	2	1	0	$87,282.00</p>
-                            <p>Recent Years</p>
-                            <p>Starts	Starts	1st	2nd	3rd	Earnings</p>
-                            <p>2016	7	2	1	0	$87,282.00</p>
-                            <p>2015	0	0	0	0	 </p>
-                        </div>
-                    </fieldset>
-              </div>
-              <div class="column small-4">
+              
+              <div class="column small-6">
                     <fieldset style="background-color: #ccac5f">
                     <h2>Recent Events</h3>
                     <table>
@@ -70,7 +65,7 @@ echo '
                     </table>
               </fieldset>
               </div>
-              
+          </div>
               
           </div>
 

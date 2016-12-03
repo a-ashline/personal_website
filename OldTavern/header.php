@@ -15,10 +15,43 @@ echo'
             background-color: #E5E4E2;
         }
         
+        .fullWidth {
+           width: 75%;
+           margin-left: auto;
+           margin-right: auto;
+           max-width: initial;
+        }
+
        .top-bar {
-            height: 3.15rem;
+            height: 4.3rem;
             
         }
+        
+        a#about {
+            height: 4.3rem;
+            border-bottom: 5px solid #ccac5f;
+        }
+        
+        a#mare {
+            height: 4.3rem;
+            border-bottom: 5px solid #ccac5f;
+        }
+        
+        a#year {
+            height: 4.3rem;
+            border-bottom: 5px solid #ccac5f;
+        }
+        
+        a#fold {
+            height: 4.3rem;
+            border-bottom: 5px solid #ccac5f;
+        }
+        
+        a#contact {
+            height: 4.3rem;
+            border-bottom: 5px solid #ccac5f;
+        }
+        
         a:visited {
             background-color: #999999;
 }
@@ -36,42 +69,57 @@ echo'
     <script type="text/javascript" src="../foundation/js/foundation/foundation.alert.js"></script>
     
 </head>
-<div class="body">
-    <div class="sticky"></div>
+<body>
+<div>
     <nav class="top-bar" style="background-color: #003617; border-bottom: 5px solid #ccac5f" class="top-bar" data-topbar role="navigation" >
         <section class="top-bar-section">
             <ul class="left">
-                <li><a href="index.php">Old Tavern Farm<!--<img src="oldtavern.PNG"> --></a></li>
+                <li><a href="index.php" style="background-color: #ccac5f"><img src="OldTLong.PNG" WIDTH="150"></a></li>
+                
             </ul>
             <ul class="right">
-                <li><a style="font-size: 14px; background-color: #003617; color:white" href="#">About</a></li>
                 ';
-                if($_SESSION['mare'])
+                if($_SESSION['about'])
                 {
-                    echo '<li><a id="mare" style="font-size: 14px; background-color: #ccac5f; color:black" href="mare.php">Mares</a></li>';
+                    echo '<li><a id="about" style="font-size: 16px; background-color: #ccac5f; color:black" href="about.php">About</a></li>';
                 }
                 else
                 {
-                    echo '<li><a id="mare" style="font-size: 14px; background-color: #003617; color:white" href="mare.php">Mares</a></li>';
+                    echo '<li><a id="about" style="font-size: 16px; background-color: #003617; color:white" href="about.php">About</a></li>';
+                }
+                if($_SESSION['mare'])
+                {
+                    echo '<li><a id="mare" style="font-size: 16px; background-color: #ccac5f; color:black" href="mare.php">Mares</a></li>';
+                }
+                else
+                {
+                    echo '<li><a id="mare" style="font-size: 16px; background-color: #003617; color:white" href="mare.php">Mares</a></li>';
                 }
                 if($_SESSION['year'])
                 {
-                    echo '<li><a id="year" style="font-size: 14px; background-color: #ccac5f; color:black" href="yearling.php">Yearlings</a></li>';
+                    echo '<li><a id="year" style="font-size: 16px; background-color: #ccac5f; color:black" href="yearling.php">Yearlings</a></li>';
                 }
                 else
                 {
-                    echo '<li><a id="year" style="font-size: 14px; background-color: #003617; color:white" href="yearling.php">Yearlings</a></li>';
+                    echo '<li><a id="year" style="font-size: 16px; background-color: #003617; color:white" href="yearling.php">Yearlings</a></li>';
                 }
                 if($_SESSION['fold'])
                 {
-                    echo '<li><a id="fold" style="font-size: 14px; background-color: #ccac5f; color:black" href="fold.php">Folds</a></li>';
+                    echo '<li><a id="fold" style="font-size: 16px; background-color: #ccac5f; color:black" href="fold.php">Folds</a></li>';
                 }
                 else
                 {
-                    echo '<li><a id="fold" style="font-size: 14px; background-color: #003617; color:white" href="fold.php">Folds</a></li>';
+                    echo '<li><a id="fold" style="font-size: 16px; background-color: #003617; color:white" href="fold.php">Folds</a></li>';
+                }
+                if($_SESSION['contact'])
+                {
+                    echo '<li><a id="contact" style="font-size: 16px; background-color: #ccac5f; color:black" href="contact.php">Contact</a></li>';
+                }
+                else
+                {
+                    echo '<li><a id="contact" style="font-size: 16px; background-color: #003617; color:white" href="contact.php">Contact</a></li>';
                 }
                 echo'
-                <li><a style="font-size: 14px; background-color: #003617" href="#">Contact</a></li>
             </ul>
         </section>
     </nav>
