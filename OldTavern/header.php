@@ -70,7 +70,7 @@ echo'
     
 </head>
 <body>
-<div>
+<div class="fixed">
     <nav class="top-bar" style="background-color: #003617; border-bottom: 5px solid #ccac5f" class="top-bar" data-topbar role="navigation" >
         <section class="top-bar-section">
             <ul class="left">

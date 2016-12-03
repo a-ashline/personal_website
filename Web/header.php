@@ -1,4 +1,5 @@
 <?php
+session_start();
 echo '<!DOCTYPE=HTML>
 <html lang="en">
 <head>
@@ -29,9 +30,9 @@ echo '<!DOCTYPE=HTML>
            margin-right: auto;
            max-width: initial;
         }
-        div#footer {
-            position: absolute;
+        div.footer {
             width: 100%;
+            height: 100%;
             bottom: 0; /* stick to bottom */
         }
 
@@ -40,9 +41,11 @@ echo '<!DOCTYPE=HTML>
     <script src="../foundation/js/foundation/foundation.js"></script>
     <script src="../foundation/js/foundation/foundation.alert.js"></script>
 </head>
-<body class="body">
-    <div class="fixed">
-        <nav class="top-bar" style="background-color: white; border-bottom: 5px solid goldenrod" class="top-bar" data-topbar role="navigation" >
+<body>';
+if($_SESSION['sticky']){echo'<div class="fixed">';}
+else {echo'<div>';}
+    echo'
+        <nav class="top-bar" style="background-color: white; border-bottom: 5px solid goldenrod" class="top-bar" data-topbar role="navigation">
           <section class="top-bar-section">
           <ul class="left">
             <li>
@@ -53,6 +56,14 @@ echo '<!DOCTYPE=HTML>
             <li>
               <a href="resume.php" style="background-color: white"><img src="../foundation-icons/svgs/fi-page.svg" style="height: 30px;"></a>
               <label style="background-color: white">Resume</label>
+            </li>
+            <li>
+              <a href="projects.php" style="background-color: white"><img src="../foundation-icons/svgs/fi-page.svg" style="height: 30px;"></a>
+              <label style="background-color: white">Projects</label>
+            </li>
+            <li>
+              <a href="experience.php" style="background-color: white"><img src="../foundation-icons/svgs/fi-page.svg" style="height: 30px;"></a>
+              <label style="background-color: white">Experience </label>
             </li>
             <li>
               <a href="mailto:ashline2012@yahoo.com" style="background-color: white"><img src="../foundation-icons/svgs/fi-mail.svg" style="height: 50px;"></a>

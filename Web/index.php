@@ -5,6 +5,8 @@
  * Date: 9/20/2016
  * Time: 11:19 PM
  */
+session_start();
+$_SESSION['sticky']=true;
 require_once("header.php");
 
 echo '
@@ -29,35 +31,19 @@ echo '
         </div>
     </fieldset>
     
-        <div class="small-12 columns" style="margin-top:10px;">
-            <div class="small-4 columns">
-                <fieldset style="background-color: darkgray">
-                    <a href="#">Interested In a game? Click here.</a>
-                </fieldset>
-            </div>
-            <div class="small-4 columns">
-                <fieldset style="background-color: darkgray">
-                    <a href="../OldTavern">Current Works.</a>
-                </fieldset>             
-            </div>  
-            <div class="small-4 columns">
-                <fieldset style="background-color: darkgray">
-                    <a href="Resume.6.6.2016.pdf">Resume</a>
-                </fieldset>             
-            </div>
+    <div class="small-12 columns" style="margin-top:10px;">
+        <div class="small-4 columns">
+            <fieldset style="background-color: darkgray">
+                <a href="#" style="color: darkgoldenrod">Interested In a game? Click here.</a>
+            </fieldset>
         </div>
-    
-             
-             
-         
-         
-         
-                </div>
+    </div>
+</div>
         
         
         
                    ';
 
-//require_once("footer.php");
+require_once("footer.php");
 ?>
 
