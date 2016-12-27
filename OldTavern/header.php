@@ -67,10 +67,11 @@ echo'
     <script type="text/javascript" src="../foundation/js/vendor/jquery.js"></script>
     <script type="text/javascript" src="../foundation/js/foundation/foundation.js"></script>
     <script type="text/javascript" src="../foundation/js/foundation/foundation.alert.js"></script>
+    <script type="text/javascript" src="../foundation/js/foundation/foundation.orbit.js"></script>
     
 </head>
 <body>
-<div class="fixed">
+<div>
     <nav class="top-bar" style="background-color: #003617; border-bottom: 5px solid #ccac5f" class="top-bar" data-topbar role="navigation" >
         <section class="top-bar-section">
             <ul class="left">
@@ -105,11 +106,11 @@ echo'
                 }
                 if($_SESSION['fold'])
                 {
-                    echo '<li><a id="fold" style="font-size: 16px; background-color: #ccac5f; color:black" href="fold.php">Folds</a></li>';
+                    echo '<li><a id="fold" style="font-size: 16px; background-color: #ccac5f; color:black" href="foal.php">Foals</a></li>';
                 }
                 else
                 {
-                    echo '<li><a id="fold" style="font-size: 16px; background-color: #003617; color:white" href="fold.php">Folds</a></li>';
+                    echo '<li><a id="fold" style="font-size: 16px; background-color: #003617; color:white" href="foal.php">Foals</a></li>';
                 }
                 if($_SESSION['contact'])
                 {

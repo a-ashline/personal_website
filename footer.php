@@ -9,12 +9,13 @@ echo '<div class="footer-bottom" style="text-align:center; background-color: lig
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <p>Andrew Ashline ©2016 </p>
-                    <p>This site was developed using Foundation 5</p>
-                    <p>For more information contact: <a href="mailto:ashline2012@yahoo.com" style="color: darkgoldenrod">
+                    <p><br>©2016 Andrew Ashline<br>
+                    This site was developed using Foundation 5. <br>
+                    For more information contact: <a href="mailto:ashline2012@yahoo.com" style="color: darkgoldenrod">
                     ashline2012@yahoo.com</a>.</p>
                 </div>
             </div>
         </div>
     </div>
+    <script>$(document).foundation();</script>
 ';

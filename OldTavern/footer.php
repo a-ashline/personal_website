@@ -19,6 +19,11 @@ echo '<div class="footer-bottom" style="text-align:center; background-color: #cc
         </div>
     </div>
 
+<script src="./js/jquery.js"></script>
+    <script src="./js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 
 
 

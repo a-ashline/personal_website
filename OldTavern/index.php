@@ -32,9 +32,9 @@ echo '
               <div class="column small-6">
                     <fieldset style="background-color: #ccac5f">
                         <h2>Horse'."'".'s</h2>
-                        <fieldset><h3>Mare</h3></fieldset>
-                        <fieldset><h3>Yearling</h3></fieldset>
-                        <fieldset><h3>Fold</h3></fieldset>                    
+                        <a href="mare.php"><fieldset><h3>Mare</h3></fieldset></a>
+                        <a href="yearling.php"><fieldset><h3>Yearling</h3></fieldset></a>
+                        <a href="foal.php"><fieldset><h3>Foal</h3></fieldset></a>               
                     </fieldset>
               </div>
               
