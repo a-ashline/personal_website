@@ -1,0 +1,5 @@
+<H1>Using a Literal</H1>
+    <%@
+        out.println("Number of days = ");
+        out.println(365);
+     %>

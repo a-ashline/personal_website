@@ -22,7 +22,8 @@ echo'
     </div>
 
 ';
-
-
+?>
+    
+<?
 require_once("../footer.php");
 ?>

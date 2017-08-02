@@ -7,7 +7,7 @@
 define('DB_SERVER','74.220.215.60');
 define('DB_PORT','3306');
 define('DB_USERNAME','andrewas_admin');
-define('DB_PASSWORD','Yankee123');
+define('DB_PASSWORD','T1m34change');
 define('DB_NAME','andrewas_OldTavern');
 
 $dbh = mysqli_connect(DB_SERVER.':'.DB_PORT,DB_USERNAME,DB_PASSWORD,DB_NAME);

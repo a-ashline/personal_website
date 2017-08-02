@@ -6,5 +6,5 @@
  * Time: 8:43 PM
  */
 echo '
-    <embed src="Resume.12.6.2016.pdf" width="600px" height="1500px" style="align-content: center;"/>
+    <embed src="Resume.7.2017.pdf" width="600px" height="1500px" style="align-content: center;"/>
 ';
