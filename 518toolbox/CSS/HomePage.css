@@ -1,12 +1,19 @@
 body {
-    background-color: #E0E0DE;
-    background:url("../Images/518homepage.jpg");
-    width: 1536px;
-    height: 783px;
+    background:url("../Images/background-home.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-
+    background-position: top;
+    background-color: #E0E0DE;
 }
 div#homepage {
-    padding-top: 40px;
+    padding-top: 80px;
+}
+p#title {
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5.8%;
+    font-size: 2.5em;
+    padding: 5px;
+    text-align: center;
+    background: rgb(115, 115, 115, 0.5);
+    color: rgb(204, 172, 95);
 }

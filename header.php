@@ -77,7 +77,7 @@ echo'<div class="small-12 columns">';
           <a href="experience.php" style="background-color: white; color: black; font-size: 14px;">Experience</a>
         </li>
         <li>
-          <a href="Resume.7.2017.pdf" style="background-color: white; color: black; font-size: 14px;" download>Resume</a>  
+          <a href="Resume.8.2017.pdf" style="background-color: white; color: black; font-size: 14px;" download>Resume</a>  
         </li>
         <li>
           <a href="mailto:ashline2012@yahoo.com" style="background-color: white"><img src="foundation-icons/svgs/fi-mail.svg" style="height: 50px;"></a>
