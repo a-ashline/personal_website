@@ -1,0 +1,12 @@
+body {
+    background-color: #E0E0DE;
+    background:url("../Images/518homepage.jpg");
+    width: 1536px;
+    height: 783px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+div#homepage {
+    padding-top: 40px;
+}
