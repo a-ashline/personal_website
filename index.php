@@ -28,7 +28,7 @@ echo '
             <div class="small-7 columns">
                 <h3 style="color: black">2016 Graduate of Siena College</h3>
                     <p style="font-size: 18px">Graduated in May 2016 with a BS in Computer Science. Curently doing consultant work. Looking for
-                     a full time position as a software developer or web developer.</p>
+                     a full time position in web development.</p>
             </div>
         </div>
     </fieldset>

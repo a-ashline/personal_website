@@ -58,7 +58,7 @@ echo'
 
 echo'<div class="small-12 columns">';
     echo '
-<nav class="top-bar" style="background-color: white; border-bottom: 5px solid goldenrod" class="top-bar" data-topbar role="navigation">
+<nav class="top-bar" style="background-color: white; border-bottom: 5px solid goldenrod" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
       <h1><a href="/" style="background-color: white"><img src="foundation-icons/svgs/fi-home.svg" style="height: 50px;"></a></h1>
@@ -77,7 +77,7 @@ echo'<div class="small-12 columns">';
           <a href="experience.php" style="background-color: white; color: black; font-size: 14px;">Experience</a>
         </li>
         <li>
-          <a href="resume.php" style="background-color: white; color: black; font-size: 14px;">Resume</a>  
+          <a href="Resume.7.2017.pdf" style="background-color: white; color: black; font-size: 14px;" download>Resume</a>  
         </li>
         <li>
           <a href="mailto:ashline2012@yahoo.com" style="background-color: white"><img src="foundation-icons/svgs/fi-mail.svg" style="height: 50px;"></a>
