@@ -6,7 +6,9 @@
  * Time: 1:10 AM
  */
 
-echo '<div class="footer-bottom" style="text-align:center; background-color: #ccac5f; border-top: 5px solid #003617">
+echo '
+<footer style="text-align:center; background-color: #ccac5f;">
+       <div class="footer" style="text-align:center; background-color: #ccac5f; border-top: 5px solid #003617">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -23,10 +25,5 @@ echo '<div class="footer-bottom" style="text-align:center; background-color: #cc
     <script src="./js/foundation.min.js"></script>
     <script>
       $(document).foundation();
-    </script>
-
-
-
-<footer style="text-align:center; background-color: #ccac5f;">
-            
+    </script>     
      </footer>';

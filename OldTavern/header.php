@@ -13,7 +13,8 @@ echo'
         html, body {
             font-size: 14px;
             background-color: #E5E4E2;
-        }
+            min-height: 100%;
+        } 
         
         .fullWidth {
            width: 75%;

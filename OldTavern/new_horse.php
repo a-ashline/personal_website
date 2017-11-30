@@ -19,7 +19,7 @@ echo '
 <div class="row fullWidth" xmlns="http://www.w3.org/1999/html">
 <fieldset class="small-12 columns" style="background-color: #F5F5F5">
 <legend>Add a Horse</legend>
-<form id="new_horse_form" action="add_horse.php" method="post">
+<form id="new_horse_form" action="new_horse.php" method="post">
   <div class="row">
     <div class="small-12 columns small-centered">  
       <label class="small-12 columns">Name
@@ -37,25 +37,27 @@ echo '
       <label class="small-8 columns">Record
         <input type="text" placeholder="Record (XX-XX-XX-XX)" />
       </label>
-      <label class="small-3 columns" style="float: left">Type<br>
-        <input type="checkbox" class="htype" value="Mare"> Mare<br>
-        <input type="checkbox" class="htype" value="Yearling"> Yearling<br>
-        <input type="checkbox" class="htype" value="Foal"> Foal<br>
-       </label>
       <label class="small-3 columns" style="float: left">Picture
         <input type="file" />
       </label>
       <label class="small-3 columns" style="float: left">Pedigree
         <input type="file" />
       </label>
-      <label class="small-12 columns" style="float: left">
-        <input type="submit" value="Submit">
-      </label>
+      <label class="small-6 columns" style="float: left">Type</label> 
+        <label style="float: left"><input type="radio" class="htype" name="horsecheck" value="Mare" > Mare </label>
+        <label style="float: left"><input type="radio" class="htype" name="horsecheck" value="Yearling"> Yearling </label> 
+        <label style="float: left"><input type="radio" class="htype" name="horsecheck" value="Foal"> Foal </label>
+      
     </div>    
   </div>
+  <input type="submit" value="Submit">
 </form>
 </fieldset>
 </div>
+
+
+
+
 ';
 
 
