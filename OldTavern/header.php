@@ -1,6 +1,6 @@
 <?php
 
-echo'
+echo '
 <html lang="en">
 <head>
 
@@ -76,7 +76,7 @@ echo'
     <nav class="top-bar" style="background-color: #003617; border-bottom: 5px solid #ccac5f" class="top-bar" data-topbar role="navigation" >
         <section class="top-bar-section">
             <ul class="left">
-                <li><a href="index.php" style="background-color: #ccac5f"><img src="OldTLong.PNG" WIDTH="150"></a></li>
+                <li><a href="index.php" style="background-color: #ccac5f"><img src="../otf/images/OldTLong.PNG" WIDTH="150"></a></li>
                 
             </ul>
             <ul class="right">
