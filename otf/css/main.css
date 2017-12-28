@@ -8,21 +8,10 @@
 .nav-links a {
     color: #000000;
 }
-.nav>li>a:focus, .nav>li>a:hover {
-    color: darkgrey;
+.nav-links li:focus {
     background-color: white;
 }
 
-.carousel {
-    height: 85vh;
-    margin-bottom: 40px;
-}
-/* Declare heights because of positioning of img element */
-.carousel .item {
-    width: 100vw;
-    height: 85vh;
-    background-color: white;
-}
 .carousel-inner > .item > img {
     top: 0;
     left: 0;
@@ -31,9 +20,12 @@
     height: auto;
     margin: auto;
 }
-li.carousel-indicators{
+
+li.carousel-indicators {
     margin-bottom: 100px;
 }
+
 img {
     background: white;
 }
+

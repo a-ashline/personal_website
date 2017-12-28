@@ -26,7 +26,7 @@ echo '
           </li>
           <li>
             <fieldset style="background-color: #E5E4E2;">
-                <a class="th" href="http://andrewashline.com/OldTavern">
+                <a class="th" href="http://andrewashline.com/otf">
                   <img src="oldTavernThumb.PNG" style="height: 200px">
                 </a>
                 <h5>Old Tavern Farm</h5>
