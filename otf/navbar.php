@@ -17,9 +17,10 @@ echo '
         </a>
     </div>
     <ul class="nav navbar-nav navbar-right" style="margin-right: 20px; margin-top: 30px;">
-        <li class="nav-links"><a href="stable.php">Stable</a></li>
+        <li class="nav-links"><a href="index.php">News</a></li>
+        <li class="nav-links"><a href="stable.php?horseT=all">Stable</a></li>
         <li class="nav-links"><a href="index.php">Farm Life</a></li>
-        <li class="nav-links"><a href="about.php">About</a></li>
+        <li class="nav-links"><a href="about.php">About Us</a></li>
     </ul>
 
 

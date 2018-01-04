@@ -16,9 +16,10 @@ echo '
       <p style="font-size: 2em;">&emsp;<a href="https://twitter.com/oldtavfarm"><i class="fa fa-twitter"></i></a>&emsp;
       <a href="https://www.instagram.com/oldtavfarm/"><i class="fa fa-instagram"></i></a></p>';
 
-if(($username != null) and ($password != null))
+if(($_SESSION['username'] == 'admin') and ($_SESSION['password'] == 'admin'))
 {
-    echo '<h4>&emsp;<a href="logout.php">Logout</a></h4>';
+    echo '<h4>&emsp;<a href="admin.php">Admin Dashboard</a></h4>
+          <h4>&emsp;<a href="logout.php">Logout</a></h4>';
 }
 else
 {

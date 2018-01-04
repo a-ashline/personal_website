@@ -6,7 +6,7 @@
  * Time: 1:08 PM
  */
 session_start();
-$username = null;
-$password = null;
+$_SESSION['username'] = "";
+$_SESSION['password'] = "";
 require_once('index.php');
 exit;

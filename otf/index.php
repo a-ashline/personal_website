@@ -57,7 +57,54 @@ echo '
         </div>
         </fieldset>
     </div>
-    <div class="stable" style="width: 100%; margin-top: 25px; margin-bottom: 20px; background-color: #003617;">
+    <div class="row" style="margin-bottom: 20px;">
+        <h1 style="text-align: center;">News</h1>
+        <div class="col-sm-4" style="text-align: center">
+        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
+            <h5>News item 1</h5>
+            <p>...</p>
+            </fieldset>
+            
+        </div>
+        <div class="col-sm-4" style="text-align: center">
+        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
+            <h5>News item 1</h5>
+            <p>...</p>
+            </fieldset>
+        </div>
+        <div class="col-sm-4" style="text-align: center">
+        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
+            <h5>News item 1</h5>
+            <p>...</p>
+            </fieldset>
+        </div>
+        <div class="col-sm-4" style="text-align: center">
+        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
+            <h5>News item 1</h5>
+            <p>...</p>
+            </fieldset>
+            
+        </div>
+        <div class="col-sm-4" style="text-align: center">
+        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
+            <h5>News item 1</h5>
+            <p>...</p>
+            </fieldset>
+        </div>
+        <div class="col-sm-4" style="text-align: center">
+        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
+            <h5>News item 1</h5>
+            <p>...</p>
+            </fieldset>
+        </div>
+        <h4 style="text-align: center;"><a href="index.php" style="color: black;">Interested in our recent events
+        <span class="glyphicon glyphicon-chevron-right" style="font-size: .8em;"></span></a></h4>
+    </div>
+    
+    
+    
+    
+    <!--<div class="stable" style="width: 100%; margin-top: 25px; margin-bottom: 20px; background-color: #003617;">
     <fieldset style="background-color: #003617;">
         <div class="col-sm-2" style="text-align: left; padding: 20px; font-size: 1.5em; color: black;">
             <a href="stable.php" style="color: black; font-size: 1.2em; color: white;">Meet the Horses
@@ -77,7 +124,7 @@ echo '
             <img src="./images/DSC_0097.jpg" width="10%" style="float: inherit;">
         </div>
         </fieldset>
-    </div>
+    </div>-->
 </div>
 ';
 

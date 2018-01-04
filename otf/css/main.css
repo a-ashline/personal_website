@@ -29,3 +29,10 @@ img {
     background: white;
 }
 
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    overflow: visible;
+}
+
