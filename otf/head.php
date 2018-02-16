@@ -6,6 +6,7 @@
  * Time: 5:54 PM
  */
 session_start();
+require_once("connection.php");
 echo ' 
 <!DOCTYPE html>
 <html lang="en">

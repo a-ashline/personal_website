@@ -58,7 +58,21 @@ echo '
         </fieldset>
     </div>
     <div class="row" style="margin-bottom: 20px;">
-        <h1 style="text-align: center;">News</h1>
+        <h1 style="text-align: center;">News</h1>';
+
+if ($result = $mysqli->query("SELECT * from news ")) {
+    $row = $result->fetch_row();
+    if($row == null)
+    {
+        echo '<h1>hello</h1>';
+    }
+    echo '<h1>bye</h1>';
+    printf("Default database is %s.\n", $row[0]);
+    $result->close();
+}
+
+
+echo '
         <div class="col-sm-4" style="text-align: center">
         <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
             <h5>News item 1</h5>
