@@ -55,7 +55,7 @@ else
     </div>
 </div>';
 
-$sql = "SELECT * from horse";
+$sql = "SELECT * from horse order by Name ASC ";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0)

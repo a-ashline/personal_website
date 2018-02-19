@@ -41,9 +41,9 @@ if($id == null)
               <div>
                 <label for="type">Type:</label>
                 <select name="type" value = "'.$row["Type"].'">
-                  <option value="foal">Foal</option>
-                  <option value="mare">Mare</option>
-                  <option value="yearling">Yearling</option>
+                  <option value="Foal">Foal</option>
+                  <option value="Mare">Mare</option>
+                  <option value="Yearling">Yearling</option>
                 </select>
               </div>
               <div>
