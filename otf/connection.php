@@ -2,12 +2,14 @@
 $servername = "198.71.225.50";
 $username = "dev-otf";
 $password = "Hockey@dev";
+$dbname = "OTF";
 
 // Create connection
-$mysqli = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
-if (mysqli_connect_errno()) {
+if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
+
 ?>

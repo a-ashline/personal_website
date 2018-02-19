@@ -47,7 +47,7 @@ echo '
       </div>
       <div class="row">
         <div class="col-md-12">
-            <p>Old Town Farm, LLC - 45 Brown Road Saratoga Springs, New York 12866</p>
+            <p>Old Tavern Farm, LLC - 45 Brown Road Saratoga Springs, New York 12866</p>
         </div>
       </div>
     </div>

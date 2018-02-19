@@ -23,31 +23,31 @@ else
     echo '<a href="stable.php?horseT=all" style="color: black;">All';
 }
                 echo '</a> | ';
-if($_SESSION['horseT']=="mares")
+if($_SESSION['horseT']=="mare")
 {
-    echo '<a href="stable.php?horseT=mares" style="color: #ccac5f;">Mares';
+    echo '<a href="stable.php?horseT=mare" style="color: #ccac5f;">Mares';
 }
 else
 {
-    echo '<a href="stable.php?horseT=mares" style="color: black;">Mares';
+    echo '<a href="stable.php?horseT=mare" style="color: black;">Mares';
 }
                 echo '</a> | ';
-if($_SESSION['horseT']=="weanlings")
+if($_SESSION['horseT']=="yearling")
 {
-    echo '<a href="stable.php?horseT=weanlings" style="color: #ccac5f;">Weanlings';
+    echo '<a href="stable.php?horseT=yearling" style="color: #ccac5f;">Yearlings';
 }
 else
 {
-    echo '<a href="stable.php?horseT=weanlings" style="color: black;">Weanlings';
+    echo '<a href="stable.php?horseT=yearling" style="color: black;">Yearlings';
 }
                 echo '</a> | ';
-if($_SESSION['horseT']=="foals")
+if($_SESSION['horseT']=="foal")
 {
-    echo '<a href="stable.php?horseT=foals" style="color: #ccac5f;">Foals';
+    echo '<a href="stable.php?horseT=foal" style="color: #ccac5f;">Foals';
 }
 else
 {
-    echo '<a href="stable.php?horseT=foals" style="color: black;">Foals';
+    echo '<a href="stable.php?horseT=foal" style="color: black;">Foals';
 }
                 echo '</a></h4>
         </fieldset>
@@ -55,63 +55,37 @@ else
     </div>
 </div>';
 
-/* return name of current default database */
-if ($result = $mysqli->query("SELECT * from news order by ")) {
-    $row = $result->fetch_row();
-    if($row == null)
+$sql = "SELECT * from horse";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0)
+{
+    $counter = 0;
+    while ($row = mysqli_fetch_assoc($result))
     {
-        printf("what what");
+        if((strcasecmp($row["Type"], $_SESSION["horseT"]) == 0) || $_SESSION["horseT"] == "all")
+            echo '<fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
+                    <h2 style="text-align: center;">'.$row["Name"].' | Mother: '.$row["Mother"].'</h2>
+                    <h4 style="text-align: center;">In-Foal to '.$row["In_foal_to"].'</h4>
+                    <div class="row" style="text-align: center;">
+                        <div class="col-sm-6">
+                            <img src="./ancestry/'.$row["ancestry"].'" width="70%"/>
+                        </div> 
+                        <div class="col-sm-6">
+                            <img src="./images/'.$row["picture"].'" width="70%"/>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <p>Type: '.$row["Type"].'</p>
+                        <p>Birth: '.$row["Birth"].'</p>
+                        <p>Color: '.$row["color"].'</p>
+                        <p>Race Record: '.$row["Race_record"].'</p>
+                        <p>Produce Record: '.$row["Produce_record"].'</p>
+                        <p><a href="./pedigree/'.$row["pedigree"].'" download>Pedigree</a></p>
+                    </div>
+                </fieldset>';
+
     }
-    printf("Default database is %s.\n", $row[0]);
-    $result->close();
 }
-
-echo '
-    <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
-        <h2 style="text-align: center;">Horse Name | Mother</h2>
-        <h4 style="text-align: center;">In-Foal to ...</h4>
-        <div class="row" style="text-align: center;">
-            <div class="col-sm-6">
-                <p>ancestry tree</p>
-                <img src="./images/IMG_5517.jpg" width="70%"/>
-            </div> 
-            <div class="col-sm-6">
-                <img src="./images/IMG_5517.jpg" width="70%"/>
-            </div> 
-        </div>
-        <div class="row">
-            <p>birth</p>
-            <p>color</p>
-            <p>Race Record</p>
-            <p>Produce Record</p>
-            <p><a href="./images/IMG_5517.jpg" download>Pedigree</a></p>
-        </div>
-    </fieldset>
-    <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
-        <h2 style="text-align: center;">Horse Name | Mother</h2>
-        <div class="row" style="text-align: center;">
-            <div class="col-sm-6">
-                <img src="./images/IMG_5517.jpg" width="70%"/>
-            </div> 
-            <div class="col-sm-6">
-                <img src="./images/IMG_5517.jpg" width="70%"/>
-            </div> 
-        </div>
-        <div class="row">
-            <p>birth</p>
-            <p>color</p>
-            <p>Race Record</p>
-            <p>Produce Record</p>
-            <p><a href="./images/IMG_5517.jpg" download>Pedigree</a></p>
-        </div>
-    </fieldset>
-</div>
-
-
-
-';
-
-
-
-
+echo '</div> ';
 require_once('foot.php');

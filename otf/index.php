@@ -60,57 +60,37 @@ echo '
     <div class="row" style="margin-bottom: 20px;">
         <h1 style="text-align: center;">News</h1>';
 
-if ($result = $mysqli->query("SELECT * from news ")) {
-    $row = $result->fetch_row();
-    if($row == null)
+
+
+$sql = "SELECT * from news order by NID DESC";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0)
+{
+    $counter = 0;
+    while ($row = mysqli_fetch_assoc($result))
     {
-        echo '<h1>hello</h1>';
+        if($counter < 5)
+        {
+            echo '<div class="col-sm-4" style="text-align: center">
+                    <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
+                                 <h4>'.$row["Title"].'</h4>
+                        <p>'.$row["Description"].'</p>
+                        </fieldset>
+            
+                     </div>';
+        }
+        else{
+            break;
+        }
+
     }
-    echo '<h1>bye</h1>';
-    printf("Default database is %s.\n", $row[0]);
-    $result->close();
 }
 
 
 echo '
-        <div class="col-sm-4" style="text-align: center">
-        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
-            <h5>News item 1</h5>
-            <p>...</p>
-            </fieldset>
-            
-        </div>
-        <div class="col-sm-4" style="text-align: center">
-        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
-            <h5>News item 1</h5>
-            <p>...</p>
-            </fieldset>
-        </div>
-        <div class="col-sm-4" style="text-align: center">
-        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
-            <h5>News item 1</h5>
-            <p>...</p>
-            </fieldset>
-        </div>
-        <div class="col-sm-4" style="text-align: center">
-        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
-            <h5>News item 1</h5>
-            <p>...</p>
-            </fieldset>
-            
-        </div>
-        <div class="col-sm-4" style="text-align: center">
-        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
-            <h5>News item 1</h5>
-            <p>...</p>
-            </fieldset>
-        </div>
-        <div class="col-sm-4" style="text-align: center">
-        <fieldset style="border: 1px solid #ccac5f; padding: 2rem; border-radius: 3px; margin-bottom: 20px; background-color: #F5F5F5">
-            <h5>News item 1</h5>
-            <p>...</p>
-            </fieldset>
-        </div>
+    </div>
+    <div class="row">
         <h4 style="text-align: center;"><a href="index.php" style="color: black;">Interested in our recent events
         <span class="glyphicon glyphicon-chevron-right" style="font-size: .8em;"></span></a></h4>
     </div>
